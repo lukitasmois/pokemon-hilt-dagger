@@ -5,10 +5,9 @@ import com.example.borrar2.data.model.PokemonModel
 
 
 data class Pokemon(
-    val name : String,
-    val url : String
+    val name : String
 )
 
-fun PokemonModel.toDomain() = Pokemon(name, url)
+fun PokemonModel.toDomain() = Pokemon(name)
 
-fun PokemonEntity.toDomain() = Pokemon(name, url)
+fun PokemonEntity.toDomain() = Pokemon(name)
