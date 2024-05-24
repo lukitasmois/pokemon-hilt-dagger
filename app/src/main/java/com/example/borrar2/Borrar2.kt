@@ -8,7 +8,7 @@ import dagger.hilt.android.HiltAndroidApp
 class Borrar2 : Application() {
     override fun onCreate() {
         super.onCreate()
-        Config.url = "https://pokeapi.co/api/v2/"
+        Config.url = "https://pokeapi.co/"
     }
 
 }

@@ -7,7 +7,7 @@ import com.example.borrar2.data.database.entities.PokemonEntity
 
 
 //esta clase seria como un "migrate" .net
-@Database(entities = [PokemonEntity::class], version = 1)
+@Database(entities = [PokemonEntity::class], version = 2)
 abstract class PokemonDatabase : RoomDatabase() {
 
     abstract fun getPokemonDao(): PokemonDao

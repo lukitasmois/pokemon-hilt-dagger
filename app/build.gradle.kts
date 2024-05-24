@@ -3,7 +3,9 @@ plugins {
     alias(libs.plugins.jetbrains.kotlin.android)
     id ("kotlin-kapt")
     id("androidx.navigation.safeargs.kotlin")
-    id("com.google.dagger.hilt.android")
+    //id("com.google.dagger.hilt.android")
+    id ("dagger.hilt.android.plugin")
+
 
 }
 
@@ -68,8 +70,9 @@ dependencies {
     implementation("com.squareup.retrofit2:retrofit:2.9.0")
 
     //dagger hilt
-    implementation("com.google.dagger:hilt-android:2.44")
-    kapt("com.google.dagger:hilt-android-compiler:2.44")
+    val hilt_version = "2.48"
+    implementation("com.google.dagger:hilt-android:$hilt_version")
+    kapt("com.google.dagger:hilt-android-compiler:$hilt_version")
 
 
     implementation(libs.androidx.core.ktx)
@@ -81,7 +84,7 @@ dependencies {
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
 }
-
+/*
 kapt {
     correctErrorTypes = true
-}
+}*/
