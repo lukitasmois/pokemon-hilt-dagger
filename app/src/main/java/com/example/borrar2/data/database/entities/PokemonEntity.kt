@@ -12,8 +12,7 @@ data class PokemonEntity(
     @PrimaryKey(autoGenerate = true)
     @ColumnInfo(name = "id") val id: Int = 0,
     @ColumnInfo(name = "name") val name: String,
-    @ColumnInfo(name = "url") val url: String
 
 )
 
-fun Pokemon.toDataBase () = PokemonEntity(name = name, url = url)
+fun Pokemon.toDataBase () = PokemonEntity(name = name)

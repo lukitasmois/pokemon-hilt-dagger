@@ -6,7 +6,7 @@ import retrofit2.http.GET
 
 interface PokemonApiClient {
 
-    @GET("pokemon/")
+    @GET("pokemon/1")
     fun getUrlsPokemons() : Response<List<PokemonModel>>
 
 }
